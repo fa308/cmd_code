@@ -1,0 +1,31 @@
+@echo off
+echo.
+echo.
+echo.
+cd \
+echo 正在清除系統  Temp 垃圾檔案 清理中，請稍候......
+echo.
+echo.
+echo.
+echo.
+@REM rd /S除了刪除目錄本身之外，一併移除指定目錄裡的所有目錄和檔案   /Q 安靜模式。  MKDIR 建立一個目錄
+start %temp% 
+RD %TEMP% /S/Q 
+echo.
+echo.
+echo.
+echo.
+MKDIR %TEMP%
+echo.
+echo.
+echo.
+@REM del /f /s /q %temp%\*.*
+echo.
+echo.
+echo.
+echo.
+echo 清除系統垃圾檔案完成！！
+echo.
+echo.
+echo.
+pause
